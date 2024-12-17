@@ -11,7 +11,7 @@ api = 'хххххххххххххххххххххххххххххххххххх�
 bot = Bot (token = api)
 dp = Dispatcher (bot, storage = MemoryStorage())
 
-kb = ReplyKeyboardMarkup()
+kb = ReplyKeyboardMarkup(resize_keyboard = True)
 button = KeyboardButton (text = 'Расчитать')
 kb.add(button)
 button2 = KeyboardButton (text = 'Информация')
